@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyEncoder</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d50a8342a4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="MyEncoder">
+        <textarea name="textArea" id="textArea" placeholder="Write here" ></textarea>
+        <div id="btns">
+            <button id="encodeBtn" class="btn" onclick="encode(),showToast(encodeMsg)" >Encode</button>
+            <button id="decodeBtn" class="btn" onclick="decode(),showToast(decodeMsg)">Decode</button>
+        </div>
+        
+        <textarea name="ansArea" id="display" placeholder="Result here" readonly></textarea>
+
+        <a href="../MyWebsiteFolder/index.html"><button id="backBtn">Back</button></a>
+    </div>
+
+    <div id="toastBox"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
